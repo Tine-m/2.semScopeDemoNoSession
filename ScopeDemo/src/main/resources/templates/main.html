@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="../product.css">
+</head>
+<body>
+<h1> Scope Demo </h1>
+<h3><p>Welcome to webshop!</p></h3>
+<a href="/newProduct"> Create product </a>
+
+<table>
+    <thead>
+    <tr>
+        <th>Product Overview</th>
+        <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${basket}">
+        <td th:text="${product.description}"></td>
+        <td th:text="${product.quantity}"></td>
+    </tr>
+    </tbody>
+</table>
+<div>Number of visitors: <span th:text="${counter}"/>
+</div>
+</body>
+</html>
