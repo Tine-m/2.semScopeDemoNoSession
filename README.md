@@ -1,3 +1,7 @@
 # 2.semScopeDemoNoSession
-## App shows global page counter <br>
-## App illustrates how basket in eshop is shared across clients/browsers which is unsual behavior. <br> See 2.semScopeDemoSession for corrected behavior.
+
+### App ...
+<li> shows global page counter <br>
+<li> has basket which is shared across clients/browsers (unsual behavior). See 2.semScopeDemoSession for better behavior.
+<li> is dynamic, as it has HTML Form to enter data and send to endpoint in @Controller
+<li> uses Thymeleaf Templatye engine to render data in HTML page in browser
